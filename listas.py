@@ -1,4 +1,6 @@
-numeros = [1,2,3,4,5]
+numeros = [1,2,3,4,5] # Sintaxis de las listas
+
+#las listas pueden tener diferentes tipos de elementos.
 
 print(numeros[:]) # Toma todos los elementos de la lista
 
@@ -13,6 +15,8 @@ numeros.insert(1,9) #Sirve para agregar un elemento en una ubicación en especif
 numeros.extend([10,11,12]) #Sirve para agregar varios elementos a una lista
 
 print(numeros.index(10)) #Sirve para saber la posición de un elemento en la lista. 
+
+print(numeros[2]) #Obtener un valor de la lista
 
 print(5 in numeros) #el in funciona para saber si el elemento se enuentra en la lista
 print(20 in numeros)
