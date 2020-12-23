@@ -43,5 +43,5 @@ print(otroDiccionario)
 newDiccionario = {23:"Jordan", "Nombre":"Michael", "Equipo":"Chicago", "anillos":{"temporadas":[1991,1992,1993,1997,1998]}}
 print(newDiccionario.keys())
 print(newDiccionario.values())
-#Forma de obtene un valor de lista que estado contenida en un diccionario que contenido en otro diccionario 
+#Forma de obtene un valor de lista que esta contenida en un diccionario, a la vez que éste está contenido en otro diccionario 
 print(newDiccionario["anillos"]["temporadas"][4])
