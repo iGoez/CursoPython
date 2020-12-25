@@ -19,9 +19,9 @@ class Coche():
     #El parametro self hace referencia al objeto perteneciente a la clase
     #el self es igual al this de JAVA, pero en Python es obligatorio colocarlo
     def arrancar(self, enmarcha):
-        self.enmarcha = enmarcha
+        self.__enmarcha = enmarcha
 
-        if self.enmarcha:
+        if self.__enmarcha:
             return "El coche está en marcha"
         else:
             return "El coche está detenido"
