@@ -43,8 +43,9 @@ class Furgoneta(Vehiculo):
         else:
             return "La furgoneta no está cargada"
 
-class VehiculoElectrico():
-    def __init__(self):
+class VehiculoElectrico(Vehiculo):
+    def __init__(self,marca,modelo):
+        super().__init__(marca,modelo)
         self.autonomia = 100
 
     def cargarEnergia(self):
@@ -52,7 +53,7 @@ class VehiculoElectrico():
 
 #Herencia múltiple
 #Cuando hay herencia múltiple y hay varios constructores, entonces se tomará el constructor de la clase del primer argumento 
-class BicicletaElectrica(Vehiculo,VehiculoElectrico):
+class BicicletaElectrica(VehiculoElectrico, Vehiculo):
     pass
 
 #Como también hereda el constructor entonces hay que pasarle parametros
@@ -68,3 +69,4 @@ print(miFurgoneta.carga(True))
 #Herencia múltiple
 #Cuando hay herencia múltiple y hay varios constructores, entonces se tomará el constructor de la clase del primer argumento 
 miBici = BicicletaElectrica("Orbea","HC130")
+miBici.estado()
