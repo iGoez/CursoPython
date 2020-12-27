@@ -1,4 +1,4 @@
-from modulos_vehiculo import *
+from modulos_vehiculo import Vehiculo
 
 miCoche = Vehiculo("Mazda","MX5")
 

@@ -64,16 +64,16 @@ class BicicletaElectrica(VehiculoElectrico, Vehiculo):
 
 
 #Como también hereda el constructor entonces hay que pasarle parametros
-miMoto = Moto("Honda", "CBR")
-miMoto.hacer_caballido()
-miMoto.estado()
+#miMoto = Moto("Honda", "CBR")
+#miMoto.hacer_caballido()
+#miMoto.estado()
 
-miFurgoneta = Furgoneta("Renault", "Kangoo")
-miFurgoneta.arrancar()
-miFurgoneta.estado()
-print(miFurgoneta.carga(True))
+#miFurgoneta = Furgoneta("Renault", "Kangoo")
+#miFurgoneta.arrancar()
+#miFurgoneta.estado()
+#print(miFurgoneta.carga(True))
 
 #Herencia múltiple
 #Cuando hay herencia múltiple y hay varios constructores, entonces se tomará el constructor de la clase del primer argumento
-miBici = BicicletaElectrica("Orbea", "HC130")
-miBici.estado()
+#miBici = BicicletaElectrica("Orbea", "HC130")
+#miBici.estado()
