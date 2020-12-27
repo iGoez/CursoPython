@@ -24,3 +24,7 @@
 # Ahorta vamos a instalar el paquete, tenemos que dirigirnos a la carpeta donde está el paquete (dist) desde consola y escribir la siguiente instrucción
 # pip3 install nombrePaquete
 # Una vez instalado ya podemos utilizar nuestro archivo y ejecutarlo en cualquier lado del ordenador
+
+# Pasos para desinstalar paquetes: 
+# 1) pip freeze (Nos ayuda a saber que paquetes están instalados)
+# 2) pip uninstall nombrePaquete y listo!!! 
