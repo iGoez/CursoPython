@@ -38,3 +38,21 @@ print("\n")
 
 for i in numeros:
     print(i, end=', ')
+
+################ FORMAS DE ELIMINAR EN UNA LISTA #############################
+
+# list.remove() elimina el primer elemento de la lista, cuyo valor es igual al del argumento pasado.
+# Cuando se utiliza este método, normalmente no se sabe o no le importa cuál es el índice del elemento que se va a eliminar.
+
+# Si conoce el índice de un elemento que quiere eliminar, puede utilizar el método list.pop()
+# list.pop() elimina un elemento en el índice especificado y lo devuelve.
+# Si no le da ningún índice a list.pop(), eliminará el último elemento de la lista.
+
+# Otra opción para eliminar un elemento de una lista por índice es utilizar la sentencia incorporada del.
+# A diferencia de list.pop() la sentencia del no devuelve un valor eliminado.
+
+# La sentencia del es también más flexible que list.pop(). Puede usarla para eliminar rangos de valores de la lista.
+# del list[0:2]
+
+# También puede usarla para borrar la lista entera.
+# del list[:]
