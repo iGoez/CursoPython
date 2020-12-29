@@ -1,4 +1,4 @@
-Probando los archivos externos 
-Nueva linea
-Hoy es 27/12/2020
-Agregando una nueva linea con el append
+1
+2
+Agregando una nueva linea con el readlines y el writelines
+3

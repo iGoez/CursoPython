@@ -16,13 +16,14 @@ print(texto)
 archivo_texto.close()
 
 # Podemos hacer lectura y escritura de una vez colocan r+
-archivo_texto=open("archivosExternos/archivo.txt", "r+")
-
+archivo_texto=open("archivosExternos/archivo.txt", "r")
 lista = archivo_texto.readlines()
+print(lista)
+archivo_texto.close()
 
-lista[1]="\nAgregando una nueva linea con el readlines y el writelines"
+lista.insert(2,"Agregando una nueva linea con el readlines y el writelines\n")
 
-# Permite agregar una lista de texto
-archivo_texto.writelines(lista)
-
+archivo_texto=open("archivosExternos/archivo.txt", "w")
+for i in lista:
+    archivo_texto.write(str(i))
 archivo_texto.close()
