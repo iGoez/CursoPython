@@ -56,3 +56,24 @@ class Triangulo():
 miTriangulo = Triangulo(80,70,90)
 print(miTriangulo.tamanioMayor())
 print(miTriangulo.tipoTriangulo())
+
+
+# Ejercicio 6
+# Realizar un programa que cree una lista de 50 elementos.
+# El primer elemento es una lista con un entero, el segundo es una lista con dos enteros, etc.
+# La lista debería tener la siguiente estructura
+# [[1], [1, 2], [1, 2, 3], …]
+
+lista = []
+resultado = []
+
+for i in range(1,51):
+    j = 1
+    while j <= i:
+        lista.append(j)
+        j = j+1
+
+    resultado.append(lista)
+    lista.clear()
+
+print(resultado)
