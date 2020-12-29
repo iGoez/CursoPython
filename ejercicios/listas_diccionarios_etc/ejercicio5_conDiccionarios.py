@@ -49,6 +49,9 @@ class Agenda():
             self.contactos[index]["Telefono"] = telefono
         if email != str(1):
             self.contactos[index]["Email"] = email
+
+    def eliminarContacto(self, id):
+        del self.contactos[id]
         
 def menu():
     miAgenda = Agenda()
@@ -56,8 +59,8 @@ def menu():
     while True:
         try:
             numero = int(input("Ingrese el número de la acción a realizar.\n"))
-            if numero in [1,2,3,4,5]:
-                if numero == 5:
+            if numero in [1,2,3,4,5,6]:
+                if numero == 6:
                     break
                 elif numero == 1:
                     nombre = input("Ingrese el nombre del nuevo contacto: ")
@@ -82,6 +85,11 @@ def menu():
                         miAgenda.editarContacto(index,nombre,telefono,email)
                     else:
                         raise TypeError("El contacto no existe")
+                elif numero == 5:
+                    nombre = input("Ingrese el nombre del contacto ha eliminar: ")
+                    index = miAgenda.contactoExiste(nombre)
+                    if index != -1:
+                        miAgenda.eliminarContacto(index)
                 else:
                     raise TypeError("El número no es válido")
         except ValueError as error:
