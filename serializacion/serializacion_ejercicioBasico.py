@@ -2,7 +2,7 @@ import pickle
 
 lista_nombres = ["Pedro", "Ana","María"]
 
-"Serialización guarda el archivo en binario por ende necesitamos escribir nuestro archivo en binario con wb"
+# Serialización guarda el archivo en binario por ende necesitamos escribir nuestro archivo en binario con wb
 fichero_externo = open("serializacion/listaNombres","wb")
 
 # Aquí hacemos el volcado de datos
